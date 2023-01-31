@@ -17,18 +17,24 @@ el.addEventListener("click", () => {
     };
 
     if (s === 2) {
-        display.classList.replace("colorbox-radial", "screen-black");
+        display.classList.replace("colorbox-radial", "colorbox-green");
         s++;
         return;
     };
 
     if (s === 3) {
-        display.classList.replace("screen-black", "screen-white");
+        display.classList.replace("colorbox-green", "screen-black");
         s++;
         return;
     };
 
     if (s === 4) {
+        display.classList.replace("screen-black", "screen-white");
+        s++;
+        return;
+    };
+
+    if (s === 5) {
         display.classList.replace("screen-white", "colorbox");
         s = 1;
         return;

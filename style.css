@@ -16,7 +16,6 @@
     /* width: 300px;
     height: 400px; */
     /* content: ''; */
-
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000, #ff7300);
     position: absolute;
     top: -2px;
@@ -33,19 +32,29 @@
 }
 
 .colorbox-radial {
-    /* background-color: blue;
-    outline: 2px solid black; */
-    /* width: 300px;
-    height: 400px; */
-    /* content: ''; */
     background: radial-gradient(#ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000, #ff7300 );
-
     position: absolute;
     top: -2px;
     left: -2px;
     background-size: 500%;
     z-index: -1;
     filter: blur(60px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 30s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.colorbox-green {
+    background: linear-gradient(69deg, #00ff3c,#0dcc39, rgb(20, 180, 57), rgb(24, 147, 53), rgb(25, 105, 43), rgb(22, 71, 34), rgb(17, 46, 24), rgb(11, 22, 14), rgb(12, 12, 12), rgb(11, 22, 14), rgb(17, 46, 24), rgb(22, 71, 34), rgb(25, 105, 43), rgb(24, 147, 53), rgb(20, 180, 57), #0dcc39, #00ff3c);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(35px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 30s linear infinite;
